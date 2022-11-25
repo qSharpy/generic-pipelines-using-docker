@@ -1,6 +1,6 @@
 {
   "application": {
-    "name": "Sample Java Application",
+    "name": "GrantsAPI",
     "type": "java"
   },
   "build": {
@@ -13,7 +13,7 @@
   },
   "archive": {
     "registry": "docker.io",
-    "repository": "edwardsdl/sample-java"
+    "repository": "bogdanbujor/sample-java-granting"
   },
   "deploy": {
     "containerPort": 8080
