@@ -1,0 +1,21 @@
+{
+  "application": {
+    "name": "Sample .NET Core App",
+    "type": "netcore"
+  },
+  "build": {
+    "path": "ValueApi/",
+    "outputPath": "ValueApi/bin/Release/netcoreapp2.0"
+  },
+  "test": {
+    "enabled": true,
+    "path": "ValueTests/"
+  },
+  "archive": {
+    "registry": "docker.io",
+    "repository": "edwardsdl/sample-netcore"
+  },
+  "deploy": {
+    "containerPort": 5000
+  }
+}

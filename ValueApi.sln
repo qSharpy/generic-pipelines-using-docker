@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueApi", "ValueApi\ValueApi.csproj", "{04A6FF54-6748-4423-88C3-99E274A40812}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueTests", "ValueTests\ValueTests.csproj", "{EF61381B-FEB7-499D-9AFA-62504DABC9B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04A6FF54-6748-4423-88C3-99E274A40812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04A6FF54-6748-4423-88C3-99E274A40812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04A6FF54-6748-4423-88C3-99E274A40812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04A6FF54-6748-4423-88C3-99E274A40812}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF61381B-FEB7-499D-9AFA-62504DABC9B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF61381B-FEB7-499D-9AFA-62504DABC9B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF61381B-FEB7-499D-9AFA-62504DABC9B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF61381B-FEB7-499D-9AFA-62504DABC9B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

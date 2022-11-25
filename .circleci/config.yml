@@ -1,0 +1,20 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: edwardsdl/netcore-pipeline:latest
+    steps:
+      - setup_remote_docker:
+          docker_layer_caching: true
+      - run:
+          name: Clone
+          command: /stages/01_clone.sh
+      - run:
+          name: Build
+          command: /stages/02_build.sh
+      - run:
+          name: Test
+          command: /stages/03_test.sh
+      - run:
+          name: Archive
+          command: /stages/04_archive.sh
