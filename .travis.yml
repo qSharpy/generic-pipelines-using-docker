@@ -1,0 +1,16 @@
+services:
+  - docker
+before_script:
+  - |
+    docker run -it -d \
+      -v /var/run/docker.sock:/var/run/docker.sock \
+      -e DOCKER_USERNAME=${DOCKER_USERNAME} \
+      -e DOCKER_PASSWORD=${DOCKER_PASSWORD} \
+      -e GITHUB_URL=${GITHUB_URL} \
+      --name java-pipeline \
+      edwardsdl/java-pipeline:latest
+script:
+  - docker exec java-pipeline /stages/01_clone.sh
+  - docker exec java-pipeline /stages/02_build.sh
+  - docker exec java-pipeline /stages/03_test.sh
+  - docker exec java-pipeline /stages/04_archive.sh

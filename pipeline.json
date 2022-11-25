@@ -1,0 +1,21 @@
+{
+  "application": {
+    "name": "Sample Java Application",
+    "type": "java"
+  },
+  "build": {
+    "path": null,
+    "outputPath": null
+  },
+  "test": {
+    "enabled": true,
+    "path": null
+  },
+  "archive": {
+    "registry": "docker.io",
+    "repository": "edwardsdl/sample-java"
+  },
+  "deploy": {
+    "containerPort": 8080
+  }
+}
